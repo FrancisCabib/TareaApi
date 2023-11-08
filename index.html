@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Convertidor de Divisas</title>
+</head>
+<body>
+  <h1><span id="mensajeError" class="encabezado"></span></h1>
+  <h1 class="encabezado">Convertidor de Divisas</h1>
+
+  <main class="contenedorPrincipal">
+    <section class="seleccionYBoton">
+      <div class="seleccionOrigen">
+        <p class="parrafo">
+          Origen de la divisa
+        </p>
+        <select id="divisaOrigen">
+          <option value="clp">Peso Chileno (CLP)</option>
+          <option value="dolar">Dólar</option>
+          <option value="euro">Euro</option>
+          <option value="bitcoin">Bitcoin</option>
+          <option value="libra_cobre">Unidad Tributaria Mensual</option>
+        </select>
+        <input type="text" id="montoConvertir" placeholder="Ingrese el monto">
+      </div>
+
+      <div class="seleccionDestino">
+        <p class="parrafo">
+          Divisa a obtener
+        </p>
+        <select id="divisaDestino">
+          <option value="">- Seleccionar -</option>
+          <option value="dolar">Dólar</option>
+          <option value="euro">Euro</option>
+          <option value="bitcoin">Bitcoin</option>
+          <option value="uf">Unidad de Fomento</option>
+          <option value="ipc">Índice de Precios al Consumidor</option>
+        </select>
+        <button id="botonConvertir">
+          Convertir
+        </button>
+      </div>
+    </section>
+    <h3 class="textoResultado">Total recibido: <span id="valorConvertido"></span></h3>
+  </main>
+
+  <div class="contenedorGrafico">
+    <canvas id="graficoHistorial" class="lienzo"></canvas>
+  </div>
+  
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

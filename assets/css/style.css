@@ -1,0 +1,92 @@
+body {
+    width: 99vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdcae1;
+  }
+  
+  .encabezado {
+    color: #FFF;
+    font-style: italic;
+  }
+  
+  .contenedorPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: auto;
+    background-color: #84b6f4;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .seleccionYBoton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .seleccionOrigen, .seleccionDestino {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  
+  .seleccionOrigen input, .seleccionDestino select {
+    text-align: center;
+    width: 50%;
+    height: 25%;
+    margin-top: 10px;
+  }
+  
+  .seleccionDestino button {
+    margin-top: 5px;
+    width: 50%;
+    height: 35%;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #77dd77;
+    font-size: 20px;
+  }
+  
+  .parrafo {
+    font-style: italic;
+    font-size: 20px;
+    color: #FFF;
+  }
+  
+  .textoResultado {
+    font-size: 25px;
+    color: #FFF;
+    font-style: italic;
+  }
+  
+  .contenedorGrafico {
+    width: 70vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin-top: 15px;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  
+  .lienzo {
+    width: 90%;
+    height: 100%;
+  }
+  
